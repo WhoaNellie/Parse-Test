@@ -1,0 +1,1 @@
+let take = "take grab pick up get";

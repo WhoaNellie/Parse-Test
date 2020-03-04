@@ -25,6 +25,15 @@ function renderMsg(side, msg) {
 function getResponse(input){
     let res = "Sorry, I haven't programmed a response to that.";
 
+    let sentence = input.split(" ");
+    let object = sentence[sentence.length - 1];
+    sentence.pop();
+    let verb = sentence.join(" ")
+    console.log(verb);
+
+    if(take.includes(verb)){
+        res = `You pick up ${object}`;
+    }
 
     
     return res;
