@@ -25,13 +25,20 @@ function renderMsg(side, msg) {
 function getResponse(input){
     let res = "Sorry, I haven't programmed a response to that.";
 
+    // deal with "the"
+    // deal with sentances > or < 2 words
+
     let sentence = input.split(" ");
+
+    sentence = sentence.filter( e => !articles.includes(e));
+    console.log(sentence);
+
     let object = sentence[sentence.length - 1];
     sentence.pop();
     let verb = sentence.join(" ")
     console.log(verb);
 
-    if(take.includes(verb)){
+    if(verb && take.includes(verb)){
         res = `You pick up ${object}`;
     }
 
