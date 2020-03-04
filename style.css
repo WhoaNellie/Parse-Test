@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(189, 189, 189);
+}
+
+.wrap{
+    margin: 5% auto;
+    width: 70%;
+}
+
+.response, .input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    line-height: 1.5;
+}
+
+.response{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid grey;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 2%;
+}
+
+.input{
+    width: 100%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+    clear: both;
+}
